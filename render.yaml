@@ -2,7 +2,7 @@ services:
   - type: web
     name: quickbench
     env: docker
-    region: paris # optional (defaults to oregon)
+    region: frankfurt # optional (defaults to oregon)
     plan: free # optional (defaults to starter)
     branch: main # optional (defaults to master)
     numInstances: 1
