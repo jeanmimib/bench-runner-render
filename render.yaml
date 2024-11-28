@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: quickbench
+    env: docker
+    region: paris # optional (defaults to oregon)
+    plan: free # optional (defaults to starter)
+    branch: main # optional (defaults to master)
+    numInstances: 1
+    healthCheckPath: /healthz
+    envVars:     
+      - key: PORT
+        value: 4000     
+      - key: GENERIC_TIMEZONE
+        value: Europe/Paris
+      - key: TZ
+        value: Europe/Paris
+    
